@@ -4,6 +4,7 @@ for _ in {1..9}
 do
 if [ $_ -eq 9 ]
 then
+  echo "Best School"
   echo "hi"
 fi
   echo "Best School"
