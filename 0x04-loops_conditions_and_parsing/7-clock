@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# make a clock that display all hours and minutes
+i=0
+
