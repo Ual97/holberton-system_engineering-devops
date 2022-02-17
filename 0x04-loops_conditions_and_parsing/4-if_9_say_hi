@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# display "Best school" 10 times but in the 9th iteration display "hi"
+for _ in {1..9}
+do
+if [ $_ -eq 9 ]
+then
+  echo "hi"
+fi
+  echo "Best School"
+done
