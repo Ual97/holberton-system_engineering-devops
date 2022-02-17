@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# display all files in cd staring after the "-"
+for i in $(ls); do echo "$i" | cut -f2 -d"-"; done
