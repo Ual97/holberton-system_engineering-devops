@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# displays a text and another one when recives SIGTERM signal
+i=0
+trap 'echo "I am invincible!!!"' SIGTERM
+while [ $i -eq 0 ]
+do
+  echo "To infinity and beyond"
+  sleep 2
+done
