@@ -1,0 +1,1 @@
+README for the 6th project on bash, about processes and signals
