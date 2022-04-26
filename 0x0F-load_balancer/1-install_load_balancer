@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # configure HAproxy with given config settings
 
-hproxycfg="\\\nlisten appname 0.0.0.0:80\n\tmode http\n\tbalance roundrobin\n\toption httpclose\n\toption forwardfor\n\tserver 3951-web-01 35.231.224.50:80 check\n\tserver 3951-web-02 54.211.197.188:80 check\n"
+hproxycfg="nfrontend http\n\tbind *:80\n\tmode http\n\tdefault_backend web-backend\n\nbackend web-backend\n\tbalance roundrobin\n\t server 3951-web-01 35.231.224.50:80 check\n\tserver 3951-web-02 54.211.197.188:80 check"
 
 sudo apt-get update
 sudo apt-get -y install nginx
