@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #script that configures ngnix server to listen on port 80
-sudo sed -i 's/sites-enabled/sites-aviable/' /etc/nginx/sites-enabled/default
+ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 sudo nginx -t
