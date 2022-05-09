@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# ufw install configured to block all incoming except 22, 443, 80
+
+sudo apt-get -y install ufw
+sudo ufw default allow outgoing
+sudo ufw default deny incoming
+sudo ufw allow ssh
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw enable
